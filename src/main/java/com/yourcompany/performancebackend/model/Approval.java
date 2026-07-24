@@ -22,6 +22,9 @@ public class Approval {
     private String status;
     private String comment;
 
+    @Column(name = "cc_to")
+    private String ccTo;
+
     @Column(name = "created_at")
     private OffsetDateTime createdAt;
 
@@ -53,6 +56,8 @@ public class Approval {
     public void setStatus(String status) { this.status = status; }
     public String getComment() { return comment; }
     public void setComment(String comment) { this.comment = comment; }
+    public String getCcTo() { return ccTo; }
+    public void setCcTo(String ccTo) { this.ccTo = ccTo; }
     public OffsetDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(OffsetDateTime createdAt) { this.createdAt = createdAt; }
     public OffsetDateTime getUpdatedAt() { return updatedAt; }
